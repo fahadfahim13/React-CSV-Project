@@ -1,8 +1,10 @@
 import { combineReducers } from 'redux'
-import formReducer from './formReducer'
+import firstFormReducer from './firstFormReducer'
+import secondFormReducer from './secondFormReducer'
 
 const rootReducer = combineReducers({
-    formReducer: formReducer,
+    firstFormReducer: firstFormReducer,
+    secondFormReducer: secondFormReducer
 })
 
 export default rootReducer

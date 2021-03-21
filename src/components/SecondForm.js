@@ -7,7 +7,7 @@ import { setSecondFormInputs } from '../redux/actions/formActions'
 import secondFormElements from './secondFormElements'
 import { Link } from "react-router-dom";
 import processData from './processData'
-import {Line} from 'react-chartjs-2';
+import { Line, Bar } from 'react-chartjs-2';
 import processChartData from './processChartData'
 
 
@@ -64,7 +64,19 @@ const SecondForm = ({  setSecondFormInputs }) => {
                 } } />
             </div>
             {FileUploaded && <div>
-                <Line data={processChartData(CSVdata)}
+                {/* <Line data={processChartData(CSVdata)}
+                options={{
+                    title:{
+                    display:true,
+                    text:'X vs KP',
+                    fontSize:20
+                    },
+                    legend:{
+                    display:true,
+                    position:'right'
+                    }
+                }} /> */}
+                <Bar data={processChartData(CSVdata)}
                 options={{
                     title:{
                     display:true,

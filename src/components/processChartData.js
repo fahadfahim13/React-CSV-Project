@@ -3,6 +3,7 @@ const processChartData = (array) => {
         labels: array.kp,
         datasets: [
             {
+            label: 'X',
             fill: false,
             lineTension: 0.5,
             backgroundColor: 'rgba(75,192,192,1)',
